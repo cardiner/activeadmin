@@ -40,6 +40,9 @@ $ ->
   # a dropdown, apply that choice to the filter input field.
   $('.filter_form_field.select_and_search select').change ->
     $(@).siblings('input').prop name: "q[#{@value}]"
+    
+  # Tab navigation
+  $('#active_admin_content .tabs').tabs()
 
   # In order for index scopes to overflow properly onto the next line, we have
   # to manually set its width based on the width of the batch action button.
